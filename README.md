@@ -14,7 +14,7 @@
 
 2. Navega al directorio del proyecto:
 
-    cd ludics-react
+    cd Ludics
 
 3. Instala las dependencias:
 
