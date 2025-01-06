@@ -10,7 +10,7 @@
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/Astceum/Ludics-react.git
+   git clone https://github.com/Astceum/Ludics.git
 
 2. Navega al directorio del proyecto:
 
