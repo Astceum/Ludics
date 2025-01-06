@@ -14,7 +14,7 @@ const LazyImage = ({ src, alt, className }) => {
           }
         });
       },
-      { threshold: [0, 0.25, 0.5, 0.75, 1] } // Puedes ajustar el umbral según tus necesidades
+      { threshold: [0, 0.25, 0.5, 0.75, 1] } // ajustar el umbral
     );
 
     if (imgRef.current) {

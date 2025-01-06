@@ -8,7 +8,6 @@ import { DisenoData } from '../components/dataService/DisenoData.jsx';
 import { StudioData } from '../components/dataService/StudioData.jsx';
 import { TvShowData } from '../components/dataService/TvShowData.jsx';
 
-/* import { LazyLoadImage } from 'react-lazy-load-image-component'; */
 import LazyVideo from '../components/LazyVideo';
 import LazyImage from '../components/LazyImage.jsx';
 

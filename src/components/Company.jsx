@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
  
 
@@ -8,7 +7,6 @@ import afpModelo from "../assets/image/ymas/company/Afp Modelo.svg" ;
 import corpgroup from "../assets/image/ymas/company/Corpgroup.svg" ;
 import abastible from "../assets/image/ymas/company/Abastible.svg" ;
 import duocUc from "../assets/image/ymas/company/Duoc UC.svg" ;
-import iplacex from "../assets/image/ymas/company/iplacex.svg" ;
 import larrainVial from "../assets/image/ymas/company/LarrainVial.svg" ;
 import adidas from "../assets/image/ymas/company/Adidas.svg" ;
 import notCo from "../assets/image/ymas/company/NotCo.svg" ;

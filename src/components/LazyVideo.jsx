@@ -18,7 +18,7 @@ const LazyVideo = ({ src, type, className, placeholder }) => {
       {!isLoaded && <LazyImage src={isMobile ? '' : placeholder} alt="Loading..." className="placeholder" />}
       {inView && (
         <video
-          src={isMobile ? '' : src} // Si es móvil, el src se establece como una cadena vacía
+          src={isMobile ? '' : src}
           type={type}
           loop
           autoPlay

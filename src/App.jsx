@@ -36,12 +36,6 @@ let btnServiceActivo = false;
         <Ludics />
     
     </>
-    //   <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-        
-    //   </Routes>
-    // </Router>
 
 
    

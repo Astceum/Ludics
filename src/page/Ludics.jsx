@@ -80,8 +80,6 @@ function Ludics() {
                         loop={true}
                         centeredSlides={true}
                         initialSlide={3}
-                        /* speed={600} */
-                        /* preventClicks={true} */
                         slidesPerView={'auto'}
                         coverflowEffect={{
                             rotate: 0,
@@ -96,7 +94,7 @@ function Ludics() {
                           delay: 2500,  // Intervalo de tiempo en milisegundos (2.5 segundos)
                           disableOnInteraction: false, // Continúa el autoplay incluso después de la interacción del usuario
                         }}
-                        /* onClick={(swiper) => swiper.slideTo(swiper.clickedIndex)} */
+
                         className="swiper1"
                     >
                         <SwiperSlide>
@@ -154,10 +152,6 @@ function Ludics() {
                     </section>
                     
 
-                    {/* <div id="experiencia-title">
-                        <img loading="lazy" src={titleDisenadores} alt=""/>
-                    </div> */}
-
                     <div className="banner-footer">
                         <div className="slide-text">
                             <h1 className="text-slider">EVENTOS | TEAM BUILDING | STREAMING | REALIZADORES DE  JUEGOS | PRODUCCIÓN | DISEÑADORES DE EXPERIENCIA | LUDICS PLAY | CREADORES DE CONTENIDO | </h1>
@@ -171,7 +165,6 @@ function Ludics() {
                     <footer>
                         <div className="banner-img-video">
                             <video className="logo-video" src="https://www.ludics.cl/demoweb/img/ludics/tv-ludics-bg.mp4" type="video/mp4" loop autoPlay muted playsInline></video>
-                            {/* <video className="logo-video-mobile" src="https://res.cloudinary.com/di5yg1rzm/video/upload/v1717445219/home-local/Secuencia_01_1_cek5q0.webm" type="video/webm" loop autoPlay muted playsInline></video> */}
                         </div>
                     </footer>
                 </div>
