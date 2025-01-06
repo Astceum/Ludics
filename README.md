@@ -18,7 +18,7 @@
 
 3. Instala las dependencias:
 
-    npm Install
+    npm install
 
 4. Ejecutar proyecto
 
