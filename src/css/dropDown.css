@@ -1,0 +1,133 @@
+.contact-container{
+    position: absolute;
+    height: 50%;
+    width: 600px;
+    top: 40px;
+    padding: 10px 0 150px 50px;
+    /* background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px); */
+    right: 0;
+    display: none;
+}
+
+.dropDown:hover .contact-container {
+    display: block;
+}
+
+#contact-ludics {
+    position: absolute;
+    /* top: 60px; */
+    width: 400px;
+    margin: 10px 65px 0 0;
+    color: #fff;
+    border-radius: 40px;
+    background-color: #00000060;
+    border: 1px solid white;
+    right: 0;
+}
+
+#contact-ludics ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contact-ludics img {
+    width: 27px;
+    height: 27px;
+}
+
+#contact-ludics li {
+    display: flex;
+    align-items: center;
+    margin: .5rem 1rem;
+}
+
+#contact-ludics a {
+    font-family: var(--font-family-lato-bold);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-ludics h2 {
+    font-family: var(--font-family-lato-bold);
+    margin-left: 10px;
+    font-size: 12pt;
+}
+
+@media screen and /* (max-width: 679px) */(max-width: 1024px)  {
+    #contact-ludics {
+        top: 0px;
+        margin-right: 70px;
+        margin-left: 45px;
+        color: #fff;
+        border-radius: 40px;
+        background-color: #00000060;
+        border: 1px solid white;
+        right: 0;
+    }
+    
+    #contact-ludics ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #contact-ludics img {
+        width: 15%;
+        height: 15%;
+    }
+    
+    #contact-ludics li {
+        display: flex;
+        align-items: center;
+        margin: .7rem 0 .7rem 1.4rem;
+        right: 0;
+    }
+    
+    #contact-ludics h2 {
+        font-family: var(--font-family-lato-bold);
+        margin-left: 10px;
+        font-size: 78%;
+    }
+}
+
+@media (max-height: 830px) {
+    .contact-container{
+        position: fixed;
+        height: 5%;
+        padding: 10px 0 100px 35px;
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 679px)  {
+    .contact-container{
+        position: fixed;
+        height: 0px;
+        padding: 0px;
+        top: 55px;
+    }
+
+    #contact-ludics {
+        width: 340px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 330px)  {
+    .contact-container{
+        position: fixed;
+        height: 0px;
+        padding: 0px;
+        top: 55px;
+    }
+
+    #contact-ludics {
+        width: 310px;
+        margin-right: 5px;
+    }
+}

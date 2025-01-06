@@ -1,0 +1,129 @@
+.banner {
+  position: fixed;
+  padding-top: 5px;
+  width: 100%;
+  height: 45px;
+  background-color: #000000;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.logo-ludics {
+  width: 150px;
+  padding: 0 20px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-U,
+#logo-I {
+  opacity: 1;
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+#logo-D {
+  transform: translate(0);
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+#logo-C,
+#logo-S {
+  transform: translate(0);
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+#logo-U.toggleService,
+#logo-U.toggleLudics,
+#logo-U.toggleAndMore,
+#logo-I.toggleService,
+#logo-I.toggleLudics,
+#logo-I.toggleAndMore {
+  opacity: 0;
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+#logo-D.toggleService,
+#logo-D.toggleLudics,
+#logo-D.toggleAndMore {
+  transform: translate(-13%);
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+#logo-C.toggleService,
+#logo-C.toggleLudics,
+#logo-C.toggleAndMore,
+#logo-S.toggleService,
+#logo-S.toggleLudics,
+#logo-S.toggleAndMore {
+  transform: translate(-18%);
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+.logo-ludics:hover {
+  #logo-U,
+  #logo-I {
+  opacity: 1;
+  transition: all 0.5s 0.2s ease-in-out;
+  }
+
+  #logo-D {
+      transform: translate(0);
+      transition: all 0.5s 0.2s ease-in-out;
+  }
+
+  #logo-C,
+  #logo-S {
+      transform: translate(0);
+      transition: all 0.5s 0.2s ease-in-out;
+  }
+}
+
+
+.social-media {
+  height: 50px;
+  padding: 0.5% 60px 0.5% 60px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-ig, .logo-tt, .logo-yt, .logo-linkedin, .logo-contactanos {
+  height: 33px;
+  margin: 0 10px;
+}
+
+@media (max-height: 830px) {
+  .banner {
+      height: 40px;
+      padding-top: 5px ;
+      overflow: hidden;
+  }
+  
+  .logo-ludics {
+      width: 150px;
+  }
+
+  .logo-ig, .logo-tt, .logo-yt, .logo-linkedin, .logo-contactanos {
+      height: 30px;
+      margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+    .logo-ludics,
+    .social-media {
+        padding: 0 13px;
+    }
+
+    .logo-ig, .logo-tt, .logo-yt, .logo-linkedin, .logo-contactanos {
+      height: 30px;
+      margin: 7px;
+  }
+
+    .banner {
+        height: 50px;
+    }
+}

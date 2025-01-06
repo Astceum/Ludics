@@ -1,0 +1,519 @@
+/* SERVICIOS */
+
+#t_servicios .toggleService { 
+    transform: translateX(-300%);
+}
+
+.menu-servicios a  {
+    margin-bottom: 80px !important;
+    text-decoration: none;
+    color: var(--color-menu-white);
+}
+
+.menu-servicios.menu {
+    margin-left: 60px;
+    padding-left: 20px;
+    font-weight: 1000;
+    transition: font-weight 0.4s;
+}
+
+#left.activate-btn-1,
+#left.activate-btn-2,
+#left.activate-btn-3,
+#left.activate-btn-4,
+#left.activate-btn-5,
+#left.activate-btn-6 {
+    width: 19.5%;
+}
+
+.menu-home.activate-btn-1,
+.menu-home.activate-btn-2,
+.menu-home.activate-btn-3,
+.menu-home.activate-btn-4,
+.menu-home.activate-btn-5,
+.menu-home.activate-btn-6 {
+    font-size: 3vw;
+    line-height: 4vw;
+    transform: scaleX(0.5);
+}
+
+#servicios.activate-btn-1,
+#servicios.activate-btn-2,
+#servicios.activate-btn-3,
+#servicios.activate-btn-4,
+#servicios.activate-btn-5,
+#servicios.activate-btn-6 {
+    transform: translateX(-304%);
+    transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+}
+
+
+aside#servicios {
+    width: 78%;
+    left: 255%;
+    right: 0;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    transition: all 1.5s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+}
+
+
+aside#servicios::-webkit-scrollbar {
+    display: none;
+}
+
+
+.menu-servicios {
+    padding-top: 90px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: var(--font-family-oswald);
+    display: inline-block; /* Asegura que el span ocupe solo el ancho de su contenido */
+    transform: scaleX(1.05); /* Escala horizontalmente el contenido */
+    transform-origin: left;
+    font-size: 6vw;
+    line-height: 8vw;
+    /* background-color: #000000; */
+    transition: font-size 1.5s, line-height 1.5s, transform 1.5s;
+}
+
+.menu-servicios .menu {
+    margin-bottom: 3% !important;
+}
+
+.menu-servicios.activate-btn-1,
+.menu-servicios.activate-btn-2,
+.menu-servicios.activate-btn-3,
+.menu-servicios.activate-btn-4,
+.menu-servicios.activate-btn-5,
+.menu-servicios.activate-btn-6 {
+    font-size: 6vw;
+    line-height: 8vw;
+    transform: scaleX(0.5);
+}
+
+.menu-servicios.menu.activate-btn-1,
+.menu-servicios.menu.activate-btn-2,
+.menu-servicios.menu.activate-btn-3,
+.menu-servicios.menu.activate-btn-4,
+.menu-servicios.menu.activate-btn-5,
+.menu-servicios.menu.activate-btn-6 {
+    font-weight: 100;
+}
+
+.menu-servicios.menu:hover {
+    font-weight: 100;
+}
+
+.menu-servicios:hover > :not(:hover) {
+    color: var(--color-menu-hover);
+}
+
+#btn-eventos h2,
+#btn-building h2,
+#btn-audiovisual h2,
+#btn-marketing h2,
+#btn-estudio h2,
+#btn-tvshow h2 {
+    display: none;
+}
+
+/* SECCION BOTONES SERVICIOS VIDEOS */
+
+.no-hover-btn-1,
+.no-hover-btn-2,
+.no-hover-btn-3,
+.no-hover-btn-4,
+.no-hover-btn-5,
+.no-hover-btn-6 {
+    font-weight: 100;
+    color: var(--color-menu-hover);
+    transition: font-weight 0.3s ease-in-out;
+}
+
+.no-hover-btn-1:hover,
+.no-hover-btn-2:hover,
+.no-hover-btn-3:hover,
+.no-hover-btn-4:hover,
+.no-hover-btn-5:hover,
+.no-hover-btn-6:hover {
+    font-weight: 1000;
+    color: var(--color-menu-red);
+}
+
+#idBtn-1.activate-btn-1,
+#idBtn-2.activate-btn-2,
+#idBtn-3.activate-btn-3,
+#idBtn-4.activate-btn-4,
+#idBtn-5.activate-btn-5,
+#idBtn-6.activate-btn-6 {
+    color: var(--color-menu-red);
+    font-weight: 1000;
+}
+
+/* BTN-EVENTOS */
+
+#eventos .activate-btn-1,
+#building .activate-btn-2,
+#audiovisual .activate-btn-3,
+#marketing .activate-btn-4,
+#estudio .activate-btn-5,
+#tvshow .activate-btn-6 {
+    transform: translateX(-300%);
+    transition: all 1s cubic-bezier(0.5, 0.1, 0.25, 1) !important;
+}
+
+
+aside#t_eventos,
+aside#t_building,
+aside#t_audiovisual,
+aside#t_marketing,
+aside#t_estudio,
+aside#t_tvshow {
+    padding-top: 70px;
+    width: 50%;
+    height: 100%;
+    left: 200%;
+    right: 0;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s cubic-bezier(0.5, 0.1, 0.25, 1) !important;
+}
+
+#t_eventos::-webkit-scrollbar,
+#t_building::-webkit-scrollbar,
+#t_audiovisual::-webkit-scrollbar,
+#t_marketing::-webkit-scrollbar,
+#t_estudio::-webkit-scrollbar,
+#t_tvshow::-webkit-scrollbar {
+    display: none;
+}
+
+#btn-eventos,
+#btn-building,
+#btn-audiovisual,
+#btn-marketing,
+#btn-estudio {
+    margin-bottom: 10%;
+}
+
+.video {
+    position: relative;
+    width: 95%;
+    margin-top: 3%;
+}
+
+.video::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0));
+    z-index: 20;
+}
+
+
+.img-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9 ;
+    /* filter: grayscale(100%); */
+    opacity: 1;
+    z-index: 10;
+}
+
+.img-front:hover {
+    opacity: 0;
+}
+
+.video .video-1 {
+    width: 100%;
+    opacity: 0;
+    aspect-ratio: 16/9 ;
+    object-fit: cover;
+}
+
+.video .video-1 video{
+    width: 100%;
+    aspect-ratio: 16/9 ;
+    object-fit: cover;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video:hover .video-1 {
+    opacity: 1;
+}
+
+.title-container {
+    position: absolute;
+    width:85%;
+    height: 40%;
+    padding: 3% 2%;
+    bottom: 0;
+    left: 0;
+    color: var(--color-menu-white);
+    font-family: var(--font-family-regular);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 20;
+}
+
+.title-video {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+   
+    font-size: 2.8vw ;
+    font-weight: 900;
+    line-height: 2.5vw;
+    
+    transition: font-weight 0.4s, transform 0.4s;
+}
+
+.subtitle-video {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+ 
+    font-size: 1.02vw ;
+    font-weight: 700;
+    line-height: 2.22vw;
+    transition: font-weight 0.4s, transform 0.4s;
+}
+
+.play-mobile {
+    display: none;
+}
+
+.video:hover .title-video,
+.video:hover .subtitle-video{
+   font-weight: 300;
+   transform: scaleX(1);
+   z-index: 10;
+}
+
+.video:hover .title-container {
+    z-index: 10;
+}
+.video:hover::before {
+    z-index: 10;
+}
+
+
+
+.text-description-service {
+    position: absolute;
+    width: 94%;
+    height: 60%;
+    margin: 40px 0;
+    font-family: var(--font-family-menu);
+    /* font-weight: 500; */
+    font-variation-settings: "wght" 500, "wdth" 100;
+    font-size: 1.125rem;
+    color: var(--color-menu-white);
+}
+
+.text-description-service p {
+    line-height: 2;
+}
+
+.text-description-service h3 {
+    font-family: var(--font-family-regular);
+    font-size: 2.2vw;
+    font-variation-settings: "wght" 900;
+}
+
+.text-description-service p span {
+    font-size: 1.62vw;
+    font-variation-settings: "wght" 900;
+}
+
+@media screen and /* (max-width: 679px) */(max-width: 1024px)  {
+
+    
+
+    #t_servicios .toggleService { 
+        transform: translateX(-320%);
+    }
+    
+    #servicios.activate-btn-1,
+    #servicios.activate-btn-2,
+    #servicios.activate-btn-3,
+    #servicios.activate-btn-4,
+    #servicios.activate-btn-5,
+    #servicios.activate-btn-6 {
+        transform: translateX(-404%);
+        transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    }
+
+
+    .menu-servicios.menu {
+        margin-left: 0px;
+    }
+
+    .menu-servicios a  {
+        margin-bottom: 0px !important;
+        text-decoration: none;
+        color: var(--color-menu-white);
+    }
+
+    .menu-servicios {
+        position: absolute;
+        bottom: 13%;
+        padding-top: 0px;
+        padding-bottom: 0px; /* 100px */ 
+        margin-bottom: 0px; /* 20px */
+        line-height: 9vw;
+        /* height: 100vh; */
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .menu-servicios .menu {
+        margin-bottom: 7% !important;
+    }
+
+    #btn-eventos h2,
+    #btn-building h2,
+    #btn-audiovisual h2,
+    #btn-marketing h2,
+    #btn-estudio h2,
+    #btn-tvshow h2 {
+        width: 55%;
+        display: block;
+        font-family: var(--font-family-menu);
+        font-size: 9vw;
+        line-height: 9vw;
+        font-weight: 1000;
+        color: var(--color-menu-white);
+        margin: 0 0 9% 3%;
+    }
+
+    /* BTN-EVENTOS */
+
+    #eventos .activate-btn-1,
+    #building .activate-btn-2,
+    #audiovisual .activate-btn-3,
+    #marketing .activate-btn-4,
+    #estudio .activate-btn-5,
+    #tvshow .activate-btn-6 {
+        transform: translateX(-200%);
+        transition: all 1s cubic-bezier(0.5, 0.1, 0.25, 1) !important;
+    }
+
+    aside#t_eventos,
+    aside#t_building,
+    aside#t_audiovisual,
+    aside#t_marketing,
+    aside#t_estudio,
+    aside#t_tvshow {
+        padding-top: 80px;
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    /* .title-video {
+        width: 0%;
+    }
+
+    .subtitle-video {
+        width: 0%;
+    } */
+
+    .img-front:hover {
+        opacity: 1;
+    }
+
+    .video:hover .title-video {
+        font-weight: 900;
+        transform: none;
+        z-index: 20;
+    }
+
+    .video:hover .subtitle-video{
+        font-weight: 500;
+        transform: none;
+        z-index: 20;
+    }
+
+    .video:hover .title-container {
+        z-index: 20;
+    }
+    .video:hover::before {
+        z-index: 20;
+    }
+
+    .title-video {
+        font-size: 5.3vw ;
+        font-weight: 900;
+        line-height: 5vw;
+    }
+    
+    .subtitle-video {
+        font-size: 2.8vw ;
+        font-weight: 500;
+        line-height: 6vw;
+    }
+
+    .play-mobile {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 3.5% 2% ;
+        padding-bottom: 0.5%;
+        color: var(--color-menu-white);
+        font-family: var(--font-family-regular);
+        display: inline-block;
+        transform: scaleX(1);
+        transform-origin: left;
+        overflow: hidden;
+        border-bottom: .5vw solid #fff;
+        font-size: 2.8vw ;
+        font-weight: 900;
+        line-height: 2.5vw;
+        z-index: 20;
+    }
+
+    .text-description-service {
+        height: 80%;
+        font-size: 1.05rem;
+        margin: 30px 0;
+    }
+    
+    .text-description-service p {
+        
+        line-height: 1.8;
+    }
+
+    .text-description-service h3 {
+        width: 55%;
+        font-size: 7vw;
+        line-height: 7vw;
+        margin: 5% 0 5% 1%;
+    }
+
+    .text-description-service p span {
+        font-size: 4.82vw;
+        font-variation-settings: "wght" 900;
+        font-family: var(--font-family-menu);
+    }
+}

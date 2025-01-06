@@ -1,0 +1,581 @@
+/* #t_and_more .toggleAndMore {  
+    transform: translateX(-350%);
+} */
+
+aside#and-more {
+    position: absolute;
+    top: 130%;
+    width: 100%;
+    /* left: 350%;
+    right: 0; */
+    /* overflow-y: scroll; */
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+    /* transition: all 2s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+    z-index: 0; */
+}
+
+
+aside#and-more::-webkit-scrollbar {
+    display: none;
+}
+
+#and-more {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family-menu);
+    color: var(--color-menu-white);
+    margin: 0;
+    padding: 0;
+    
+}
+
+#container-resume {
+    position: relative;
+    height: 42vh;
+    /* background-color: #000000; */
+    background: linear-gradient(to top, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0));
+    padding: 60px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.video-resume {
+    width: 65%;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+}
+
+.video-resume video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .video-resume::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0));
+} */
+
+.gradient-resume {
+    width: 35%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.gradient-resume img {
+    padding: 0 0 2% 0;
+    width: 54%;
+    object-fit: cover;
+}
+
+.gradient-resume p,
+.gradient-resume h4 {
+    /* padding-left: 7%; */
+    font-family: var(--font-family-regular);
+    color: var(--color-menu-white);
+}
+
+.gradient-resume p {
+    font-size: .9vw;
+    font-weight: 300;
+    line-height: .5;
+}
+
+.gradient-resume h4 {
+    font-size: 1.3vw;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.gradient-resume h4 span {
+    margin-right: 2em;
+}
+
+.slider-portafolio {
+    position: relative;
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0))
+}
+
+.swiper2 {
+    width: 100%;
+    /* height: 90%; */
+    margin: 25px 0;
+    overflow: hidden;
+    
+}
+
+.swiper3 {
+    width: 100%;
+    height: 35%;
+    margin: 25px 0;
+    overflow: hidden;
+    
+}
+
+.swiper2 .swiper-slide,
+.swiper3 .swiper-slide {
+    position: relative !important;
+    text-align: center;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.swiper2 .swiper-slide img,
+.swiper3 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper2-container,
+.swiper3-container {
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.swiper2-button-prev,
+.swiper2-button-next,
+.swiper3-button-prev,
+.swiper3-button-next {
+    top: 45%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2.3px solid #686868;
+    background-color: #7c7c7c48;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    
+    z-index: 999;
+    transition: transform 0.1s linear;
+}
+
+
+.swiper2-button-prev,
+.swiper3-button-next {
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.swiper2-button-next,
+.swiper3-button-prev {
+    left: 10px;
+}
+
+.swiper2-button-prev svg,
+.swiper2-button-next svg,
+.swiper3-button-prev svg,
+.swiper3-button-next svg {
+    height: 83%;
+    width: 100%;
+    color: #ffff;
+}
+
+
+
+#contacto-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#bg-contacto {
+    position: absolute;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-contacto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hablemos-title{
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hablemos-title img {
+    width: 35%;
+}
+
+
+#title-company-and-more {
+    padding: 9% 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-losMejores {
+    /* position: absolute; */
+    width: 27.7%;
+    padding-bottom: 1%;
+}
+
+.han-confiado {
+    /* position: absolute; */
+    width: 28%;
+}
+
+
+#company-and-more {
+    
+    margin-top: 50px;
+    /* padding-bottom: 10%; */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
+}
+
+.company {
+    height: 80px;
+    width: 15%;
+    margin: 2% 3%;
+}
+
+.logo-pyg {
+    width: 7%;
+    margin: 0 6.5%;
+}
+
+.logo-afc {
+    width: 8%;
+    margin: 0 6.5%;
+}
+
+.logo-copec {
+    width: 11%;
+    margin: 0 4.5%;
+}
+
+.logo-fundacionChile {
+    width: 12%;
+    margin: 0 4.5%;
+}
+
+.logo-google {
+    width: 11%;
+    margin: 0 5%;
+}
+
+.logo-smartFit {
+    width: 11%;
+    margin: 0 5%;
+}
+
+.logo-entel {
+    width: 13%;
+    margin: 0 4%;
+}
+
+.contacto-bg {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.contacto-bg img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    bottom: 30px;
+}
+
+.date-contact {
+    position: absolute;
+    top: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-contact ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.date-contact img {
+    width: 85px;
+    height: 85px;
+    bottom: 120%;
+}
+
+.date-contact li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: .5rem 4rem;
+}
+
+.date-contact h2 {
+    font-family: var(--font-family-regular);
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+.footer-andMore {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-lato);
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .date-contact {
+        top: 85%;
+    }
+}
+
+@media screen and /* (max-width: 679px) */(max-width: 1024px)  {
+
+    aside#and-more {
+        top: 110%;
+    }
+
+    .gradient-resume {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gradient-resume h4 {
+        font-size: 3.4vw;
+        line-height: 1.5;
+    }
+
+    .gradient-resume p {
+        font-size: 2.6vw;
+        line-height: 1;
+    }
+
+    .gradient-resume img {
+        width: 46%;
+        padding-bottom: 5%;
+    }
+
+    .video-resume {
+        display: none;
+    }
+
+    .slider-portafolio {
+        position: relative;
+        height: 110%;
+        padding: 0 20px 20px 20px;
+        margin: 0;
+    }
+
+    .swiper2-button-prev,
+    .swiper2-button-next,
+    .swiper3-button-prev,
+    .swiper3-button-next {
+        display: none;
+    }
+
+    #hablemos-title{
+        padding-top: 20%;
+    }
+
+    #hablemos-title img {
+        width: 80%;
+    }
+
+    #title-company-and-more {
+        padding: 9% 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .title-losMejores {
+        width: 54%;
+        padding-bottom: 2.5%;
+    }
+    
+    .han-confiado {
+        width: 55%;
+    }
+    
+    #company-and-more {
+        margin-top: 30px;
+    }
+
+    
+    .company {
+        height: 35px;
+        width: 25.7%;
+        margin: 3.8% 3%;
+    }
+
+    .contacto-bg {
+        height: 30%;
+    }
+
+    .contacto-bg img {
+        bottom: 25px;
+    }
+
+    .contacto-bg-ios {
+        position: absolute;
+        width: 100%;
+        height: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+
+    .contacto-bg-ios img {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        bottom: 120px; 
+    }
+
+    .date-contact {
+        top: 75%;
+    }
+    
+    .date-contact img {
+        width: 33px;
+        height: 33px;
+        bottom: 100%;
+    }
+    
+    .date-contact li {
+        margin: .5rem 1rem;
+    }
+    
+    .date-contact h2 {
+        font-size: 7pt;
+    }
+
+    .date-contact-ios {
+        position: absolute;
+        top: 61%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-height: 670px) {
+        .date-contact-ios {
+            top: 50%;
+        }
+    }
+    
+    .date-contact-ios img {
+        width: 33px;
+        height: 33px;
+        bottom: 100%;
+    }
+
+    .date-contact-ios ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .date-contact-ios li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: .5rem 1rem;
+    }
+
+    
+    .date-contact-ios h2 {
+        font-family: var(--font-family-regular);
+        font-weight: 500;
+        font-size: 7pt;
+    }
+
+    .footer-andMore {
+        height: 25px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family-lato);
+        font-size: 7px;
+    }
+
+    .footer-andMore-ios {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 120px; 
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+        font-family: var(--font-family-lato);
+        font-size: 7px;
+    }
+
+    .footer-andMore-ios h3 {
+        padding-top: 1.6%;
+    }
+    
+}
+

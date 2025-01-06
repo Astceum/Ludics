@@ -1,0 +1,53 @@
+@media screen and /* (max-width: 679px) */(max-width: 1024px)  {
+    .btnBack-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 6rem;
+    height: 6rem;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.btnBack-container.toggleService,
+.btnBack-container.toggleLudics,
+.btnBack-container.toggleAndMore {
+    visibility: visible;
+}
+
+.btnBack {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border: 2.3px solid #686868;
+    background-color: #8c8c8c22;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.btnBack h1 {
+    position: absolute;
+    font-family: var(--font-family-regular);
+    font-weight: 800;
+    font-size: 1.1rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-bottom: 1vw solid #fff;
+}
+
+.btnBack i {
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+}
+

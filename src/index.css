@@ -1,0 +1,21 @@
+:root {
+  --color-menu-red: #ff0000;
+  --color-menu-white: #fff;
+  --color-menu-hover: #8b8b8b;
+  --font-family-menu: nunitosans-italic;
+  --font-family-regular: nunitosans-regular;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100vh;
+}
+
